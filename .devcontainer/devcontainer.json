@@ -1,7 +1,7 @@
 {
   "name": "app",
   "dockerComposeFile": [
-    "../docker-compose.yml"
+    "../compose.yml"
   ],
   "service": "app",
   "workspaceFolder": "/app",
