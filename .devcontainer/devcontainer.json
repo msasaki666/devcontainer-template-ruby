@@ -1,0 +1,38 @@
+{
+  "name": "app",
+  "dockerComposeFile": [
+    "../docker-compose.yml"
+  ],
+  "service": "app",
+  "workspaceFolder": "/app",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "editor.formatOnSave": true,
+        "dotfiles.repository": "msasaki666/dotfiles",
+        "dotfiles.targetPath": "~/dotfiles",
+        "dotfiles.installCommand": "~/dotfiles/install.sh",
+        "solargraph.useBundler": true,
+        "solargraph.hover": true,
+        "solargraph.formatting": true,
+        "solargraph.definitions": true,
+        "solargraph.references": true,
+        "solargraph.folding": true,
+        "solargraph.diagnostics": true,
+        "solargraph.completion": true
+      },
+      "extensions": [
+        "bung87.rails",
+        "castwide.solargraph",
+        "editorconfig.editorconfig",
+        "kaiwood.endwise",
+        "eamodio.gitlens",
+        "mhutchie.git-graph",
+        "donjayamanne.githistory",
+        "zhengxiaoyao0716.intelligence-change-case",
+        "mosapride.zenkaku"
+      ]
+    }
+  },
+  "postCreateCommand": "bundle --jobs $(nproc)"
+}
